@@ -1,5 +1,8 @@
 venv/
-.env
 __pycache__/
-embeddings/
 *.pyc
+.env
+embeddings/
+
+# Ignore raw legal PDFs
+data/raw_pdfs/*.pdf
