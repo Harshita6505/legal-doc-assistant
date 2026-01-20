@@ -1,8 +1,15 @@
+# Virtual environment
 venv/
+
+# Python cache
 __pycache__/
 *.pyc
-.env
-embeddings/
 
-# Ignore raw legal PDFs
-data/raw_pdfs/*.pdf
+# Uploaded files
+backend/data/uploads/
+
+# Vector DB
+backend/vectorstore/
+
+# HuggingFace cache
+.cache/
