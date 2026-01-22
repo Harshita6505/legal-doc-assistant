@@ -28,6 +28,29 @@ if uploaded_file:
         if response.status_code == 200:
             summary = response.json().get("summary")
             st.subheader("📌 Summary")
+            st.divider()
+st.subheader("🔎 Ask a question about the document")
+
+query = st.text_input("Enter your legal question")
+
+if st.button("Ask Question"):
+    if query.strip() == "":
+        st.warning("Please enter a question")
+    else:
+        with st.spinner("Searching document..."):
+            response = requests.post(
+                f"{BACKEND_URL}/ask",
+                json={"query": query}
+            )
+
+        if response.status_code == 200:
+            answer = response.json().get("answer")
+            st.markdown("### ✅ Answer")
+            st.write(answer)
+        else:
+            st.error("Failed to get answer from backend")
+
             st.write(summary)
         else:
             st.error("Failed to summarize document")
+
