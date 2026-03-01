@@ -31,6 +31,7 @@ print(f"Document split into {len(chunks)} chunks.")
 # 3️⃣ LOAD MODEL (SUPPORTED TASK)
 # =========================
 print("Loading model...")
+#integrated tinyLlama model instead of DistilBART
 
 generator = pipeline(
     "text-generation",
