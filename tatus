@@ -1,0 +1,5 @@
+[33mc472e4e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Merge branch 'main' of https://github.com/Harshita6505/legal-doc-assistant
+[33m82984db[m Add Legal Document Assistant project
+[33m4722647[m Add text embedding functionality using SentenceTransformer
+[33ma879377[m Add PDF loading and text splitting functionality
+[33m18a6adf[m Re-add Streamlit UI for document upload & query
