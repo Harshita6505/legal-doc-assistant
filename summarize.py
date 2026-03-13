@@ -2,6 +2,7 @@ import os
 from transformers import pipeline
 from PyPDF2 import PdfReader
 
+
 # =========================
 # 1️⃣ LOAD DOCUMENT
 # =========================
